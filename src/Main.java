@@ -6,9 +6,6 @@ void main() {
     String nome = readln("Digite o nome do pet: ");
     Pet meuPet = new Pet(nome, 5, 5);
 
-    Alimento alimento1 = new Alimento("carne", 3, 2);
-    Alimento alimento2 = new Alimento("batata frita", 1, 4);
-
     while(!sair) {
         println("""
                 =================================
