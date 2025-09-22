@@ -11,9 +11,9 @@ public class Pet {
         this.fome = f2;
     }
 
-    void alimentar() {
-        this.fome = Math.max(0, this.fome - 2);
-        this.felicidade = Math.max(0, this.felicidade - 1);
+    void alimentar(Alimento comida) {
+        this.fome = Math.max(0, this.fome - comida.valorNutricional);
+        this.felicidade = Math.max(0, this.felicidade - comida.valorEnergia);
         println("O pet foi alimentado com sucesso!");
     }
 
